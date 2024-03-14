@@ -49,7 +49,7 @@ function MainNav(props) {
   }
   return (
     <div className="shadow-md pt-5 w-full relative top-0 left-0">
-      <div className="ml-6 md:flex items-center justify-between dark:bg-slate-950 bg-white md:py-0 pt-5 pb-4 md:px-0 px-7">
+      <div className="pl-6 md:flex items-center justify-between dark:bg-slate-950 bg-white md:py-0 pt-5 pb-4 md:px-0 px-7">
         <Link to="/">
           <div
             className=" dark:text-indigo-600 font-bold text-2xl cursor-pointer flex items-center font-urbanist

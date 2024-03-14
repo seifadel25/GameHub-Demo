@@ -28,6 +28,7 @@ function MainNav(props) {
     "md:w-auto",
     "md:pl-0",
     "pl-0",
+    "rounded-lg",
 
     "dark:bg-slate-950",
     `${
@@ -48,7 +49,7 @@ function MainNav(props) {
     );
   }
   return (
-    <div className="shadow-md pt-5 w-full relative top-0 left-0">
+    <div className="shadow-md pt-5 w-full relative top-0 left-0 rounded-lg">
       <div className="pl-6 md:flex items-center justify-between dark:bg-slate-950 bg-white md:py-0 pt-5 pb-4 md:px-0 px-7 rounded-lg">
         <Link to="/">
           <div
@@ -70,7 +71,7 @@ function MainNav(props) {
             name={open ? "close-circle-outline" : "menu-outline"}
           ></ion-icon>
         </div>
-        <div className="items-center md:h-20 lg:h-16 md:w-9/12">
+        <div className="items-center md:h-20 lg:h-16 md:w-9/12 ">
           <ul className={classname}>
             {/* {Links.map((link) => (
               <li
@@ -113,7 +114,7 @@ function MainNav(props) {
             {/* <ThemeSwitcher  /> */}
             <button
               onClick={props.toggleDarkMode}
-              className=" md:h-fit h-full block text-sm text-gray-500 hover:text-black hover:font-bold dark:bg-slate-950 dark:hover:text-indigo-500 dark:hover:bg-slate-950  duration-500 py-7 px-10  md:p-0 w-fit   font-urbanist  md:ml-0"
+              className="rounded-lg md:h-fit h-full block text-sm text-gray-500 hover:text-black hover:font-bold dark:bg-slate-950 dark:hover:text-indigo-500 dark:hover:bg-slate-950  duration-500 py-7 px-10  md:p-0 w-fit   font-urbanist  md:ml-0"
             >
               <ion-icon name="contrast-outline"></ion-icon>
             </button>

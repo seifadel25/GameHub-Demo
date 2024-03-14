@@ -42,7 +42,7 @@ function AllMeetupsPage() {
 
   return (
     <div className="dark:bg-slate-950 bg-indigo-300 w-full dark:text-white text-black font-urbanist">
-      <h1 className="text-3xl text-center my-10"> All Meetups Available</h1>
+      <h1 className="text-3xl text-center my-10"> All Game Events Available</h1>
       <MeetupList meetups={loadedMeetups} />
 
       {/* <ul>

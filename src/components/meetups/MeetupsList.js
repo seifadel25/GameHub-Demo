@@ -2,7 +2,7 @@ import MeetupItem from "./MeetupItems";
 
 function MeetupList(props) {
   return (
-    <ul className="grid xl:grid-cols-3 place-items-center gap-y-6">
+    <ul className="grid gap-x-4 mx-4 xl:grid-cols-3 place-items-center gap-y-6">
       {props.meetups.map((meetup) => (
         <MeetupItem
           key={meetup.id}

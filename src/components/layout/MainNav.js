@@ -5,21 +5,6 @@ import FavContext from "../../store/fav-context";
 import { useState } from "react";
 import classNames from "classnames";
 
-let Links = [
-  {
-    name: "All Meets",
-    path: "/",
-  },
-  {
-    name: "New Meets",
-    path: "/new-meetup",
-  },
-  {
-    name: "Favourites",
-    path: "/favs",
-  },
-];
-
 function MainNav(props) {
   const FavCtx = useContext(FavContext);
   let [open, setOpen] = useState(false);
@@ -56,14 +41,15 @@ function MainNav(props) {
   if (FavCtx.totalFavs === 0) {
     contentx = <span></span>;
   } else {
-    contentx=
-    <span className=" dark:bg-slate-800 bg-white text-indigo-600 dark:text-white rounded-full px-4 ml-2 ">
-      {FavCtx.totalFavs}
-    </span>;
+    contentx = (
+      <span className=" dark:bg-slate-800 bg-white text-indigo-600 dark:text-white rounded-full px-4 ml-2 ">
+        {FavCtx.totalFavs}
+      </span>
+    );
   }
   return (
-    <div className="shadow-md  w-full relative top-0 left-0">
-      <div className=" md:flex items-center justify-between dark:bg-slate-950 bg-white md:py-0 pt-5 pb-4 md:px-0 px-7">
+    <div className="shadow-md pt-5 w-full relative top-0 left-0">
+      <div className="ml-6 md:flex items-center justify-between dark:bg-slate-950 bg-white md:py-0 pt-5 pb-4 md:px-0 px-7">
         <Link to="/">
           <div
             className=" dark:text-indigo-600 font-bold text-2xl cursor-pointer flex items-center font-urbanist
@@ -104,7 +90,7 @@ function MainNav(props) {
                 className=" h-full md:h-full text-center  box-border block hover:bg-indigo-300 hover:text-white text-indigo-600 dark:text-gray-500 dark:bg-slate-950 dark:hover:text-indigo-500 dark:hover:bg-slate-950 md:duration-500 md:py-4 pt-7 md:px-4 w-full"
                 to="/"
               >
-                All Meetups
+                All Games
               </Link>
             </li>
             <li className=" h-20 md:h-full md:ml-0  text-xl md:py-0 md:my-0 py-0 w-full">
@@ -112,7 +98,7 @@ function MainNav(props) {
                 className=" h-full md:h-full text-center  box-border block hover:bg-indigo-300 hover:text-white text-indigo-600 dark:text-gray-500 dark:bg-slate-950 dark:hover:text-indigo-500 dark:hover:bg-slate-950 md:duration-500 md:py-4 pt-7 md:px-4 w-full"
                 to="/new-meetup"
               >
-                New Meetups
+                New Events
               </Link>
             </li>
             <li className=" h-20 md:h-full md:ml-0  text-xl md:py-0 md:my-0 py-0 w-full">

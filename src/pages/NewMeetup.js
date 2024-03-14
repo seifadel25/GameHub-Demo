@@ -23,7 +23,7 @@ function NewMeetupsPage() {
   return (
     <div className=" dark:bg-slate-950 h-screen bg-indigo-300">
       <h1 className="text-3xl dark:text-white text-black text-center my-10">
-        Add New Meetup
+        Add New Game Event
       </h1>
       <NMForm onAdd={addMeetupHandler} />
     </div>

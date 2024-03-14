@@ -12,7 +12,7 @@ if(favCtx.totalFavs === 0){
 else {
   content = <MeetupList meetups={favCtx.favs}/>
 }
-  return <div className="dark:bg-slate-950 bg-indigo-300 w-full dark:text-white text-black font-urbanist ">
+  return <div className="dark:bg-slate-950 bg-indigo-300 w-full h-full dark:text-white text-black font-urbanist ">
     <h1 className=" text-center text-4xl my-10"> Favourites Page</h1>
     {content}
       {console.log(favCtx.favs)}
